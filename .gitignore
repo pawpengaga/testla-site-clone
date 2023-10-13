@@ -20,3 +20,4 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 public/video.mp4
+public/video.webm

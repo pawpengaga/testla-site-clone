@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Hola tilines">
 	<main>
-		<header class="py-4 px-10 flex items-center fixed top-0 w-full justify-between">
+		<header class="py-4 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white">
 			<div class="flex flex-grow basis-0">
 				<svg class="h-6 w-32"
 				viewBox="0 0 342 35"
@@ -14,7 +14,7 @@ import Layout from '../layouts/Layout.astro';
 				fill="currentColor"></path></svg>
 			</div>
 			<nav>
-				<ul class="flex text-sm [&>li>a]:text-gray-900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+				<ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
 					<li><a href="#">Model S</a></li>
 					<li><a href="#">Model 3</a></li>
 					<li><a href="#">Model X</a></li>
@@ -24,7 +24,7 @@ import Layout from '../layouts/Layout.astro';
 				</ul>
 			</nav>
 			<nav class="flex flex-grow justify-end basis-0">
-				<ul class="flex text-sm [&>li>a]:text-gray-900 [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+				<ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
 					<li><a href="#">Soporte</a></li>
 					<li><a href="#">Tienda</a></li>
 					<li><a href="#">Cuenta</a></li>
@@ -32,5 +32,25 @@ import Layout from '../layouts/Layout.astro';
 				</ul>
 			</nav>
 		</header>
+
+		<section class="bg-black h-screen w-screen text-center relative overflow-hidden">
+			<div class="z-30 relative h-full flex flex-col">
+				<header>
+					<h2 class="text-white pt-40 text-[40px] font-medium">Disfrute de Tesla</h2>
+					<p class="text-white text-sm">Programe una prueba de conducción hoy mismo</p>
+				</header>
+				<footer class="flex flex-col flex-grow justify-end pb-20">
+					<div>
+						<a href="#" class="text-white border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-base px-12 py-2 hover:bg-white hover:text-black transition-colors duration-300">
+							Prueba de conducción
+						</a>
+					</div>
+				</footer>
+			</div>
+			
+			<div class="absolute top-0 bottom-0 h-full w-full z-10">
+				<video class="object-center object-cover h-full w-full" autoplay muted loop src="/video.webm" />
+			</div>
+		</section>
 	</main>
 </Layout>
