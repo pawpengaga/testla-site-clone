@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.2",
-    "astro": "^3.3.0",
+    "astro": "^5.1.1",
+    "mytesla-landing": "file:",
     "tailwindcss": "^3.3.3"
   }
 }
